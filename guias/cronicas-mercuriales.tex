@@ -1,0 +1,74 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[spanish]{babel}
+%\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[pdftex,colorlinks=true, pdfstartview=FitH,
+linkcolor=blue,citecolor=blue, urlcolor=blue, pdfpagemode=UseOutlines,
+pdfauthor={H. Asorey},pdftitle={Física 1A - Final}]{hyperref}
+%\usepackage{palatino}
+%\usepackage{amssymb}
+\usepackage[adobe-utopia]{mathdesign}
+
+\hoffset -1.23cm
+\textwidth 16.5cm
+\voffset -2.0cm
+\textheight 25.0cm
+
+\begin{document}
+
+\begin{enumerate}
+
+\item{\bf{Crónicas mercuriales}}
+
+Considere un satélite de masa $m_s$ girando en una órbita circular alrededor
+del planeta Mercurio (masa $M_M = 3.3\times 10^{23}$\,kg; radio $R_M =
+2440$\,km). El satélite se encuentra a una altura tal que se verifica:
+
+\[E_c + E_p = -\left ( \frac{m_s}{2} \right ) \left (6.48 \times 10^6\right)
+\mathrm{\ J\ kg}^{-1} \]
+
+\begin{enumerate}
+\item Calcule la altura del satélite sobre la superficie de Mercurio, su
+velocidad orbital $v_o$, y el tiempo requerido para completar una órbita.
+\item Si el satélite es una esfera de radio $r=10$\,m con una densidad media
+$\rho =3.9$\,g\,cm$^{-3}$, calcule su energía cinética y potencial.
+\item Calcule la velocidad de escape para un cuerpo que se halle sobre la
+superficie de Mercurio.
+\end{enumerate}
+
+Datos útiles:
+
+Constante de gravitación universal $G=6.67\times10^{-11}$\,N\,m$^2$\,kg$^{-2}$
+
+\begin{enumerate}
+\item Sabemos que $E_c=1/2 m_s v_o^2$. Si la órbita es circular, entonces además se verifiqa: 
+\[ v_o^2 = \frac{GM}{r}. \] Luego, 
+\[ E_c = \frac{1}{2} \frac{G M m_s}{r} = - \frac{1}{2} E_p.\]
+Entonces, 
+\[E_c+E_p = \frac{1}{2} E_p = -\frac{GM m_s}{2r} = -6.48 \times 10^6 \frac{m_s}{2} \mathrm{\ J\ kg}^{-1}. \]
+Cancelando $m_s$ y despejando $r$ se obtiene: 
+\[r = \frac{GM}{6.48 \times 10^6} \mathrm{\ metros} =  3.44\times 10^6\mathrm{\ metros} = 3440  \mathrm{\ km}. \]
+Luego, la altura sobre la superficie es $h=1000$\,km. Con esto, la velocidad orbital queda:
+\[ v_o = \sqrt{\frac{GM}{r}} = \frac{GM}{3440 \mathrm{\ km}} = 2530 \mathrm{\ m} \mathrm{\ s}^{-1}. \]
+Para un órbita circular, $v_o=2\pi r/T$, luego, 
+\[ T= \frac{2 \pi r}{v_o} = 8542\mathrm{\ s} \simeq 142 \mathrm{\ minutos}\]
+
+\item El volumen del satélite es : $V=4/3 pi r_s^3$. Luego, su masa será: 
+\[m_s = \frac{4}{3} \rho \pi r_s^3 = 4189 \rho \mathrm{\ m}^3 = 1.63 \times 10^7 \mathrm{\ kg}.\]
+Luego, las correspondientes energías serán:
+\[ E_c  = \frac{1}{2} m_s v_o^2 = 5.228\times 10^{13} \mathrm{\ J}. \]
+
+\[ E_p  = -\frac{GM m_s}{r} = - 1.046\times 10^{14} \mathrm{\ J} = - 2 E_c. \]
+
+\item La velocidad de escape de Mercurio es: 
+
+\[ v_e = \sqrt{\frac{2 G M }{R}} = \sqrt{1.28 \times 10^7  \mathrm{\ m}^2 \mathrm{\ s}^{-2}} = 3578 \mathrm{\ m} \mathrm{\ s}^{-1}\] 
+
+
+\end{enumerate}
+\end{enumerate}
+
+\end{document}
+%%%%
