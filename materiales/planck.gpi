@@ -1,0 +1,30 @@
+#see colors at http://www.vendian.org/mncharity/dir3/blackbody/
+
+reset; load '~/.gnuplot'
+
+c = 2.99792458e8
+h = 6.6262e-34
+k = 1.3807e-23
+
+set grid
+
+planck(l,T)  = ((2*h*c**2)/((l/1e9)**5)) * (1./(exp((h*c)/((l/1e9)*k*T)) - 1.))
+planckr(l,T) = ((2*h*c**2)/((l/1e9)**5)) * (1./(exp((h*c)/((l/1e9)*k*T)) - 1.)) * T**(-4)
+set samples 5000
+
+set ylabel "Intensidad (unidades arbitrarias)"
+set xlabel "{/Symbol l} [nm]"
+set format y "%.3f"
+
+plot [0:5000] \
+planckr(x, 1000) w l lw 9 lt 1 lc rgb '#ff3800' t "T= 1000 K", \
+planckr(x, 2000) w l lw 9 lt 1 lc rgb '#ff8912' t "T= 2000 K", \
+planckr(x, 3000) w l lw 9 lt 1 lc rgb '#ffb46b' t "T= 3000 K", \
+planckr(x, 4000) w l lw 9 lt 1 lc rgb '#ffd1a3' t "T= 4000 K", \
+planckr(x, 5600) w l lw 9 lt 1 lc rgb '#ffeee3' t "T= 5600 K", \
+planckr(x, 8000) w l lw 9 lt 1 lc rgb '#e3e9ff' t "T= 8000 K", \
+planckr(x,10000) w l lw 9 lt 1 lc rgb '#ccdbff' t "T=10000 K"
+call '/work/asoreyh/tesis/trunk/figs/ps.gpi' 'planck' 'solid color "Arial, 19"'
+
+
+

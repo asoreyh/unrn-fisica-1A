@@ -1,0 +1,191 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[spanish]{babel}
+\hyphenation{co-rres-pon-dien-te}
+%\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[pdftex,colorlinks=true, pdfstartview=FitH, linkcolor=blue,
+citecolor=blue, urlcolor=blue, pdfpagemode=UseOutlines, pdfauthor={H. Asorey},
+pdftitle={Física 1A - Guía 05}]{hyperref}
+\usepackage[adobe-utopia]{mathdesign}
+
+\hoffset -1.23cm
+\textwidth 16.5cm
+\voffset -2.0cm
+\textheight 26.0cm
+
+%----------------------------------------------------------------
+\begin{document}
+\title{
+{\normalsize{Universidad Nacional de Río Negro - Profesorados de Física y
+Química}}\\ Física I A \\ Guía 05 - Evolución Estelar}
+\author{Asorey - Cutsaimanis}
+\date{2016}
+\maketitle
+
+\begin{enumerate}
+\setcounter{enumi}{24}      %% Offset en numero de problema
+
+\item{\bf{Ley de Wien}}
+
+Hallar el valor de $\xi$ utilizando los datos de la siguiente tabla y
+compararlo con el valor aceptado, $\xi = 2.897 \times 10^6$\,nm\,K.
+
+\begin{tabular}{ r | r }
+$\lambda_{\max}$ [nm] & T [K]\\
+\hline
+29000 & 100 \\
+5750 & 500 \\
+1170 & 2500 \\
+510 & 5500 \\
+280 & 11000
+\end{tabular}
+(ayuda: realice los cambios de variables apropiados para linealizar la ecuación
+y grafique, calculando la pendiente de la recta obtenida).
+
+\item{\bf{Colores}}
+
+Utilice la ley de Wien para determinar $\lambda_{\max}$, la correspondiente
+frecuencia $f_{\max}$, y el color de cada una de las siguientes estrellas: 
+
+\begin{tabular}{ l | r }
+Nombre & $T$ [K] \\
+\hline
+Sol & $5777$ \\
+Mintaka & $31000$ \\
+Betelgeuse & $3400$ \\
+Sirio A & $9540$ \\
+Rigel & $11000$ \\
+$\eta$-Carinae & $39000$
+\end{tabular}
+
+\item{\bf{(*) Betelgeuse y Rigel}}
+
+Betelgeuse($\alpha$-Ori) y Rigel ($\beta$-Ori) son las dos estrellas más
+brillantes de la constelación de Orión. Sus posiciones se conocen con excelente
+precisión, habiéndose medido un paralaje de $5.07\times10^{-3}$\,arcseg para
+Betelgeuse y  $4.22\times10^{-3}$\,arcseg para Rigel. Utilizando un bolómetro
+en órbita, ha sido posible medir los flujos de energía en la Tierra:
+$\mathcal{F}_{\mathrm{Betelgeuse}} = 8.6845$\,W\,m$^{-2}$ y
+$\mathcal{F}_{\mathrm{Rigel}} = 3.7819$\,W\,m$^{-2}$.
+ 
+\begin{enumerate}
+\item Calcule la distancia de la Tierra a estas dos estrellas, medidas en m,
+años-luz y parsecs (recuerde que si el paralaje es $1$\,arcseg la estrella se
+encuentra a $1$\,parsec de distancia, y la relación es inversamente
+proporcional). 
+\item Calcule las luminosidades de Betelgeuse y Rigel. Expresarlas en unidades
+de $L_\odot$ y en W.
+\item Calcule las masas de Betelgeuse y Rigel ($M_\odot =
+1.899\times10^{30}$kg).
+\item Utilice las temperaturas de las estrellas dadas en el ejercicio 26 para
+estimar los radios de las mismas. 
+\item ¿Dentro de que clasificación espectral las colocaría? ¿En que posición
+del diagrama H-R las ubicaría? Justifique.
+\item Calcule los radios mínimos y máximos de la zona de habitabilidad de cada estrella.
+\end{enumerate}
+
+\item{\bf{Observación astronómica}}
+
+Durante el invierno, mirando hacia el Este y a media altura antes de la
+medianoche es posible observar la constelación de Scorpio.
+La estrella más brillante (Antares) se encuentra a 600 años luz de la Tierra.
+Sabiendo que tiene el mismo color que Betelgeuse y que su masa es $M=15.5
+M_\odot$, calcule la Luminosidad y el radio de Antares. Luego determine el tamaño mínimo y máximo de la zona de habitabilidad.
+
+\item{\bf{Temperaturas}}
+
+La temperatura superficial del Sol es $T=5777$ K. Entonces:
+
+\begin{enumerate}
+\item Utilice la ley de Steffan-Boltzmann para estimar el valor de $L_\odot$ y
+compárelo con el valor conocido.
+\item En los últimos estadios de su vida, se sabe que el Sol se transformará en
+una gigante roja. Suponiendo que la temperatura superficial disminuirá hasta
+$T=3200$, calcule cuál deberá ser la luminosidad solar para que la distancia
+entre la Tierra y la superficie del Sol hinchado sea mayor de $10^7$ km.
+Exprese el resultado en watts y en unidades de la luminosidad solar actual.
+\item ¿Cuál será el destino final del Sol? Suponiendo que el objeto resultante
+tiene un $90\%$ de la masa solar actual y el radio típico de esos objetos,
+calcule la densidad, el valor de $g$ y la velocidad de escape $v_e$ sobre la
+superficie del mismo.
+\item ¿Cuál sería el nuevo valor de $\lambda_{\max}$ si por alguna razón la
+temperatura superficial aumenta hasta $T = 10500$ K? En este caso, y suponiendo
+que $L_\odot$ no cambiaría, ¿qué debería pasar con el radio solar?
+\end{enumerate}
+
+\item{\bf{(*) Supernova supernueva}}
+
+Cuando una estrella se convierte en supernova, hasta el 1\% de su masa se
+libera en forma de energía. De esta energía, el 99\% se libera en forma de
+neutrinos y el resto como radiación electromagnética. Imaginemos que Canopus
+($\alpha$-Car, F0, $M=8.5\ M_\odot$, $d=310$ años-luz) se convierte en
+supernova.
+\begin{enumerate}
+\item Calcule la cantidad de energía liberada como neutrinos (indetectable).
+\item Calcule el flujo de energía electromagnética que se medirá en la Tierra.
+Compare este valor con la constante solar,
+$\mathcal{F}_\odot=1400$\,W\,m$^{-2}$.
+\item El objeto resultante será una estrella de neutrones, con un radio
+aproximado de $R=20$\,km. Calcule la densidad, el valor de $g$ y la velocidad
+de escape $v_e$ sobre la superficie de la estrella de neutrones.
+\item Calcule el radio de Schwarzschild de Canopus. Compárelo con el obtenido
+para el Sol.
+\end{enumerate}
+
+\item{\bf{Con una estrella en nuestro interior}}
+
+\begin{enumerate}
+\item Calcule la Luminosidad $L$ del cuerpo humano ($T_h = 310$\,K) suponiendo que la temperatura del entorno es de $20^\mathrm{o}$C ($T_e=293$\,K). Recuerde que es posible aproximar al cuerpo humano por un cilindro de densidad $d=1010$\,kg m$^{-3}$, con una masa $m=70$\,kg y $h=170$\,cm de altura. Expresar el resultado en W. 
+\item ¿De dónde proviene esta energía? ¿Qué importancia tiene este resultado en la vida diaria?
+\item Imaginemos ahora que multiplicamos la L obtenida en el punto anterior por un factor $10^{25}$ y situamos a esta nueva estrella a una distancia de $65.2$\,años luz de la Tierra. Calcule:
+\begin{enumerate}
+\item La Luminosidad en unidades de $L_\odot$.
+\item La masa en kg.
+\item El radio de la estrella, suponiendo que es esférica y su temperatura efectiva es $T=3400$\,K 
+\item ¿En qué zona del diagrama H-R ubicaría usted a esta estrella?
+\item ¿Cuál de los tres posibles finales usted espera debe tener
+esta estrella? 
+\end{enumerate}
+\end{enumerate}
+
+\item{\bf{Producción de energía (Optativo)}}
+
+La masa de un núcleo es menor que la suma de las masas de los protones y neutrones que lo componen. Esto se debe a la contribución negativa de la energía de unión, que según la relación $E=mc^2$ corresponde a una masa. Esa diferencia se denomina {\emph{defecto de masa}}:
+\[ \Delta m = N m_n + Z m_p - m\]
+donde:
+\begin{itemize}
+\item $m$ es la masa del núcleo
+\item $N$ es el número de neutrones (por ende $N=A-Z$, dónde $A$ es el número másico)
+\item $Z$ es el número atómico (igual al número de protones)
+\item $m_p = 938.3$\,MeV/c$^2$ y $m_n = 939.6$\,MeV/c$^2$ son las masas del protón y del neutrón respectivamente.
+\end{itemize}
+
+En este contexto, la energía de ligadura por nucleón queda dada por: 
+
+\[ B = \frac{\Delta m c^2}{A} \]
+
+Calcule el defecto de masa y la energía de ligadura por nucleón de los siguientes átomos:
+\begin{enumerate}
+\item $^4_2$He (Helio-4, $m=3728.4$\,MeV/c$^2$).
+\item $^{56}_{26}$Fe (Hierro-56, $m=52103$\,MeV/c$^2$).
+\item $^{208}_{82}$Pb (Plomo-208, $m=193729$\,MeV/c$^2$).
+\item $^{40}_{20}$Ca (Calcio-40, $m=37225$\,MeV/c$^2$).
+\item $^{41}_{20}$Ca (Calcio-41, $m=38156$\,MeV/c$^2$).
+\end{enumerate}
+
+\item {\bf{Atucha (Optativo)}}
+
+La central nuclear Atucha obtiene su energía de la reacción de fisión del isótopo $^{235}_{92}$U (Uranio-235), con una masa de $m=218942$\,MeV/c$^2$.
+
+\begin{enumerate}
+\item Determine la cantidad de neutrones del isótopo.
+\item Calcule el defecto de masa del Uranio-235 en MeV/c$^2$.
+\item Calcule la energía de unión por nucleón.
+\end{enumerate}
+
+\end{enumerate}
+
+\end{document}
+%%%%
